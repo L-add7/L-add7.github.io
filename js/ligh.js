@@ -27,23 +27,20 @@ function changeColor() {
             idx = 0;
         }
     } else {
+        // 白天模式恢复默认
         if (document.getElementById("site-name"))
-            document.getElementById("site-name").style.textShadow = arr[idx] + " 0 0 15px";
+            document.getElementById("site-name").style.textShadow = "#1e1e1ee0 1px 1px 1px";
         if (document.getElementById("site-title"))
-            document.getElementById("site-title").style.textShadow = arr[idx] + " 0 0 15px";
+            document.getElementById("site-title").style.textShadow = "#1e1e1ee0 1px 1px 1px";
         if (document.getElementById("site-subtitle"))
-            document.getElementById("site-subtitle").style.textShadow = arr[idx] + " 0 0 10px";
+            document.getElementById("site-subtitle").style.textShadow = "#1e1e1ee0 1px 1px 1px";
         if (document.getElementById("post-info"))
-            document.getElementById("post-info").style.textShadow = arr[idx] + " 0 0 5px";
+            document.getElementById("post-info").style.textShadow = "#1e1e1ee0 1px 1px 1px";
         try {
-            document.getElementsByClassName("author-info__name")[0].style.textShadow = arr[idx] + " 0 0 12px";
-            document.getElementsByClassName("author-info__description")[0].style.textShadow = arr[idx] + " 0 0 12px";
+            document.getElementsByClassName("author-info__name")[0].style.textShadow = "";
+            document.getElementsByClassName("author-info__description")[0].style.textShadow = "";
         } catch {
             
-        }
-        idx++;
-        if (idx == 8) {
-            idx = 0;
         }
     }
 }
